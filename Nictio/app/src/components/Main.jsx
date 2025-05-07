@@ -3,7 +3,7 @@ import google from '../assets/google.webp'
 import pay from '../assets/pay.webp'
 import stripe from '../assets/stripe.webp'
 import wise from '../assets/wise.webp'
-import contact from '../assets/contact.svg'
+import user from '../assets/user.svg'
 
 const Main = () => {
   return (
@@ -47,23 +47,45 @@ const Main = () => {
         <div>
           <ul className="flex  justify-center gap-10 flex-wrap text-gray-500">
             <li className="border-r-1 pe-5 mt-3">Cards</li>
-
             <li className="border-r-1 pe-5 mt-3">Expenses</li>
-            
             <li className="border-r-1 pe-5 mt-3">Bill Pay</li>
             <li className="border-r-1 pe-5 mt-3">Accounting</li>
             <li className="border-r-1 pe-5 mt-3">Reporting</li>
           </ul>
         </div>
 
-        <div>
-          <div className="contact-logo">
-            
-          </div>
-          <div></div>
-          <div></div>
-        </div>
+        
       </section>
+      <div data-aos="fade-up " data-aos-duration='500'>
+          <div className="ms-5">
+            <img src={user} alt="contact" className="mask-radial-at-center p-4 rounded-full shadow-lg bg-white" width={80} height={80} />
+            <div className="flex flex-col gap-5 mt-4">
+              <p className="font-thin text-2xl text-dark-500">Create an account</p>
+              <p className="text-gray-400 ">Mobile app made easy check out across the web and in apps without having to enter any payment information</p>
+            </div>
+          </div>
+          <div className="ms-5">
+            <img src={user} alt="contact" className="mask-radial-at-center p-4 rounded-full shadow-lg bg-white" width={80} height={80} />
+            <div className="flex flex-col gap-5 mt-4">
+              <p className="font-thin text-2xl text-dark-500">Verify your identity</p>
+              <p className="text-gray-400 ">Mobile app made easy check out across the web and in apps without having to enter any payment information</p>
+            </div>
+          </div>
+          <div className="ms-5 ">
+            <img src={user} alt="contact" className="mask-radial-at-center p-4 rounded-full shadow-lg bg-white" width={80} height={80} />
+            <div className="flex flex-col gap-5 mt-4">
+              <p className="font-thin text-2xl text-dark-500">Link your bank account</p>
+              <p className="text-gray-400 ">Mobile app made easy check out across the web and in apps without having to enter any payment information</p>
+            </div>
+          </div>
+        </div>
+
+        <section className="mx-auto px-5 mt-10">
+          <div className="container ">
+            <h2 className="text-h2">How will <span className="text-blue-500 bg-blue-300">online payment</span>
+            platform benefit your product.</h2>
+          </div>
+        </section>
     </div>
   );
 };

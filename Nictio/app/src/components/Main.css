@@ -1,0 +1,8 @@
+.contact-logo{
+    background-image: url('../assets/contact.svg');
+    background-position:right;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
