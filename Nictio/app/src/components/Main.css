@@ -6,3 +6,10 @@
     width: 30px;
     height: 30px;
 }
+
+.videoBackground{
+    background-image: url('../assets/spend.webp');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
