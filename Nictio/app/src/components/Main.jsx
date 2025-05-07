@@ -47,7 +47,9 @@ const Main = () => {
         <div>
           <ul className="flex  justify-center gap-10 flex-wrap text-gray-500">
             <li className="border-r-1 pe-5 mt-3">Cards</li>
+
             <li className="border-r-1 pe-5 mt-3">Expenses</li>
+            
             <li className="border-r-1 pe-5 mt-3">Bill Pay</li>
             <li className="border-r-1 pe-5 mt-3">Accounting</li>
             <li className="border-r-1 pe-5 mt-3">Reporting</li>
