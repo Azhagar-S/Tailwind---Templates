@@ -3,23 +3,12 @@ import logo from "../assets/logo.svg";
 import { useState,useEffect } from "react";
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [nightEffect , setNighteffect] = useState(false)
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 10) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-    window.addEventListener('scroll', handleScroll);
-
-   
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+ 
   return (
-    <div className={` w-full max-w-screen-xl mx-auto top-0 sticky py-0.25 bg-white ${isScrolled ? 'shadow-b-lg   ' : ''}`}>
-            <div className={`flex justify-between my-10 mx-5  `}>
+    <div className={` w-full max-w-screen-xl mx-auto top-0 sticky py-0.25 bg-white ${isScrolled ? 'shadow-b-lg   ' : ''} `}>
+            <div className={`flex justify-between my-10 mx-5 ${nightEffect ? 'text-white bg-blacky':''} `}>
                 <div className='flex gap-10  w-1/2'>
                     <img src={logo} alt="" />
                     <div className='mt-3 hidden lg:block' >
@@ -40,7 +29,8 @@ const Navbar = () => {
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
-                  className="self-center"
+                  className="self-center "
+                  onClick={()=>setNighteffect(!nightEffect)}
                 >
                   <path
                     fill="currentColor"

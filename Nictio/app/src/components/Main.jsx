@@ -66,7 +66,7 @@ const Main = () => {
         </div>
       </div>
          
-          <div><img src={hero} alt="" className="lg:h-screen hidden"/></div>
+          <div><img src={hero} alt="" className="lg:h-screen lg:block hidden"/></div>
            
       </div>
       
