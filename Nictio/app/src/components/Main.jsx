@@ -14,27 +14,24 @@ import card from "../assets/card.webp"
 import method1 from '../assets/method1.webp'
 import method3 from '../assets/method3.webp'
 import benift from '../assets/benefit.webp'
+import method2 from '../assets/method2.webp'
+import hero from '../assets/hero-image.webp'
+
 const Main = () => {
   const [showframe, setShowFrame] = useState(false);
+  
   return (
     <div className=" w-full max-w-screen-xl mx-auto ">
-      <div className="flex ">
-      <div className="p-3  flex flex-col gap-7 px-4 lg:w-1/2 ">
-        <h1 className="font-semibold  text-3xl text-gray-800 mt-10 md:text-5xl ">
-          Quickest and <br />
-          easiest <br />
-          <span className="text-blue-500  bg-blue-200 ">
-            online payment
-          </span>{" "}
-          <br />
-          platform for your product.
-        </h1>
-        <p className="font-normal text-gray-400">
+     
+      <div className="flex items-center justify-between px-5">
+      <div className="lg:w-2/5 mt-10 w-screen">
+        <h1 className="text-4xl lg:text-5xl font-semibold leading-tight " >Quickest and easiest <span className="text-blue-600 bg-blue-100 px-2 rounded">online payment</span> platform for your product.</h1>
+        <p className="font-normal text-gray-400 mt-10">
           Embed powerful financial features into your product, Build in minutes,
           launch in weeks.
         </p>
-        <div className="flex justify-between">
-          <button className="btn bg-blue-500  text-white font-thin  rounded-md px-8 py-4 flex justify-between hover:bg-white hover:border border-blue-500 hover:text-blue-500">
+        <div className="flex gap-10 mt-10">
+        <button className="btn bg-blue-500  text-white font-thin  rounded-md lg:px-8 lg:py-4 px-2 py-4 flex justify-between hover:bg-white hover:border border-blue-500 hover:text-blue-500">
             Get Started
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -50,7 +47,7 @@ const Main = () => {
               />
             </svg>
           </button>
-          <button className="btn text-gray-400 font-thin  rounded-md px-8 py-4 flex justify-between">
+          <button className="btn text-gray-400 font-thin  rounded-md lg:px-8 lg:py-4 px-2 py-4 flex justify-between">
             See Features
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -67,13 +64,13 @@ const Main = () => {
             </svg>
           </button>
         </div>
-
-       
-          {/* <img src={heroimg} className="hidden lg:block lg:img" alt="" /> */}
-        
       </div>
+         
+          <div><img src={hero} alt="" className="lg:h-screen hidden"/></div>
+           
       </div>
-      <div className="p-3 flex flex-col gap-5 py-10">
+      
+      <div className="p-3 flex flex-col gap-5 ps-10">
         <p className="text-gray-400">Trused by</p>
         <div className="flex gap-10 w-10 scale-75">
           <img src={google} alt="" />
@@ -84,12 +81,12 @@ const Main = () => {
       </div>
 
       <section
-        className="flex flex-col gap-6 py-14"
+        className="flex flex-col gap-6 lg:ps-14 mx-10 lg:mt-30"
         data-aos="fade-down"
         data-aos-easing="linear"
-        data-aos-duration="1500"
+        data-aos-duration="1000"
       >
-        <h2 className="text-2xl font-bold text-center md:text-4xl">
+        <h2 className="text-2xl font-bold text-center md:text-4xl md:w-2/3 md:ms-40">
           Easy and affordable for your  personal and{" "}
           <span className="text-blue-500">
             business payment
@@ -97,7 +94,7 @@ const Main = () => {
           needs
         </h2>
 
-        <div>
+        <div className="md:my-15 ">
           <ul className="flex  justify-center gap-10 flex-wrap text-gray-500">
             <li className="border-r-1 pe-5 mt-3">Cards</li>
             <li className="border-r-1 pe-5 mt-3">Expenses</li>
@@ -108,7 +105,7 @@ const Main = () => {
         </div>
       </section>
       <div data-aos="fade-up " data-aos-duration="500" className="md:flex ">
-        <div className="ms-5 md:flex  md:gap-10 ">
+        <div className="ms-5 md:flex  md:gap-10 flex-wrap">
           <img
             src={user}
             alt="contact"
@@ -126,7 +123,7 @@ const Main = () => {
             </p>
           </div>
         </div>
-        <div className="ms-5 md:flex   md:gap-10">
+        <div className="ms-5 md:flex   md:gap-10 flex-wrap">
           <img
             src={user}
             alt="contact"
@@ -144,7 +141,7 @@ const Main = () => {
             </p>
           </div>
         </div>
-        <div className="ms-5 md:gap-10 md:flex ">
+        <div className="ms-5 md:gap-10 md:flex flex-wrap">
           <img
             src={user}
             alt="contact"
@@ -152,7 +149,7 @@ const Main = () => {
             width={80}
             height={80}
           />
-          <div className="flex flex-col gap-5 mt-4">
+          <div className="flex flex-col gap-5 mt-4 ">
             <p className="font-thin text-2xl text-dark-500">
               Link your bank account
             </p>
@@ -191,35 +188,35 @@ const Main = () => {
             Grow revenues and delight your customers by building financial
             features.
           </div>
-          <div>
+          <div className="flex gap-5 mb-10">
             <img src={pic} alt="" className="mb-4" />
             <p className="text-dark">
               Stop wasteful spend and save thousands with unlimited points and
               insights that maximize savings.
             </p>
           </div>
-          <div>
+          <div className="flex gap-5 mb-10">
             <img src={contact} alt="" className="mb-4" />
             <p className="text-dark">
               Stop wasteful spend and save thousands with unlimited points and
               insights that maximize savings.
             </p>
           </div>
-          <div>
+          <div className="flex gap-5 mb-10">
             <img src={bank} alt="" className="mb-4" />
             <p className="text-dark">
               Stop wasteful spend and save thousands with unlimited points and
               insights that maximize savings.
             </p>
           </div>
-          <div>
+          <div className="flex gap-5 mb-10">
             <img src={files} alt="" className="mb-4" />
             <p className="text-dark">
               Stop wasteful spend and save thousands with unlimited points and
               insights that maximize savings.
             </p>
           </div>
-          <div>
+          <div className="flex gap-5 mb-10">
             <img src={settings} alt="" className="mb-4" />
             <p className="text-dark">
               Stop wasteful spend and save thousands with unlimited points and
@@ -227,8 +224,8 @@ const Main = () => {
             </p>
           </div>
 
-          <div className="flex justify-center">
-            <button className="btn bg-blue-500  text-white font-thin  rounded-md px-4 py-4 flex justify-around hover:bg-white hover:border border-blue-500 hover:text-blue-500 gap-5">
+          <div className="flex justify-start">
+            <button className="btn bg-blue-500  text-white font-thin  rounded-md px-6 py-4 flex justify-around hover:bg-white hover:border border-blue-500 hover:text-blue-500 gap-5">
               Get Started
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -303,17 +300,17 @@ const Main = () => {
         </div>
       )}
 
-      <section data-aos="fade-down" data-aos-duration="600">
+      <section data-aos="fade-down" data-aos-duration="600" className="mt-20">
         <div className="text-center flex flex-col">
           <h2 className="text-4xl mb-10">Many ways to manage your online payment</h2>
           <p className="text-gray-400">Embed powerful financial features into your product, Build in minutes, launch in weeks.</p>
         </div>
       </section>
 
-      <section data-aos="fade-down" data-aos-duration="1000" data-aos-delay="40">
-        <div className="flex flex-col gap-10 px-10 mx-5 mt-10 md:ms-10">
-          <h2 className="text-2xl font-medium md:text-4xl md:font-medium ">Physical & Virtual Cards</h2>
-          <p className="text-left text-gray-400">Fully programmable, debit - credit physical & virtual cards for individuals and businesses.</p>
+      <section  data-aos-duration="1000" data-aos-delay="40" className="xl:flex justify-center ">
+        <div className="flex flex-col gap-7   mt-10 ms-15 xl:w-1/3 ">
+          <h2 className="text-2xl font-medium md:text-3xl md:font-medium ">Physical & Virtual Cards</h2>
+          <p className="text-left text-gray-400 w-2/3">Fully programmable, debit - credit physical & virtual cards for individuals and businesses.</p>
           <button className="text-left text-blue-400 flex gap-2">Get started <svg
               xmlns="http://www.w3.org/2000/svg"
               width="12"
@@ -327,57 +324,86 @@ const Main = () => {
                 d="M10.157 12.711L4.5 18.368l-1.414-1.414l4.95-4.95l-4.95-4.95L4.5 5.64l5.657 5.657a1 1 0 0 1 0 1.414"
               />
             </svg></button>
-          <div>
-            <img src={card} alt="" />
-          </div>
+          
+        </div>
+        <div>
+            <img src={card} alt="" className="w-80 h-80 md:w-fit md:h-fit ms-10"  />
         </div>
       </section>
 
-      <section className="mb-10  w-1/2">
-        {/* <div className="px-4  mt-10 flex gap-10 ">
-          <img src={method1} className=" rounded-e-2xl shadow-2xl  order-1 float-right" alt="" />
-          <div className="rounded-s-2xl flex flex-col gap-10 justify-center pt-10 order-2">
-            <h2 className="text-2xl font-bold">Banking</h2>
-            <p>Fully programmable, debit credit physical & virtual cards for individuals and businesses.</p>
-            <button className="text-left text-blue-400 flex gap-2">Get started <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="12"
-              height="24"
-              viewBox="0 0 12 24"
-              className="text-blue-400"
-            >
-              <path
-                fill="currentColor"
-                fill-rule="evenodd"
-                d="M10.157 12.711L4.5 18.368l-1.414-1.414l4.95-4.95l-4.95-4.95L4.5 5.64l5.657 5.657a1 1 0 0 1 0 1.414"
-              />
-            </svg></button>
-          </div>
-        </div> */}
-
-
-        <div className="flex ">
-        <div className="flex flex-col justify-center gap-5">
-        <h2 className="text-2xl font-bold">Banking</h2>
-            <p>Fully programmable, debit credit physical & virtual cards for individuals and businesses.</p>
-            <button className="text-left text-blue-400 flex gap-2">Get started <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="12"
-              height="24"
-              viewBox="0 0 12 24"
-              className="text-blue-400"
-            >
-              <path
-                fill="currentColor"
-                fill-rule="evenodd"
-                d="M10.157 12.711L4.5 18.368l-1.414-1.414l4.95-4.95l-4.95-4.95L4.5 5.64l5.657 5.657a1 1 0 0 1 0 1.414"
-              />
-            </svg></button>
+      <section className="lg:flex w-full max-w-screen-xl mx-auto">
+        <div className="flex flex-col gap-10 items-center  ">
+        <div className='flex lg:w-1/2 gap-4 px-5  lg:px-0'>
+                <div className='flex flex-col lg:gap-10 gap-5 w-1/2 lg:w-2/3 justify-center'>
+                    <h2 className='text-2xl'>Banking</h2>
+                    <p className=''>Fully programmable, debit credit physical & virtual cards for individuals and businesses.</p>
+                    <button className="text-left text-blue-400 flex gap-2">Get started <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="24"
+                      viewBox="0 0 12 24"
+                      className="text-blue-400"
+                    >
+                      <path
+                        fill="currentColor"
+                        fill-rule="evenodd"
+                        d="M10.157 12.711L4.5 18.368l-1.414-1.414l4.95-4.95l-4.95-4.95L4.5 5.64l5.657 5.657a1 1 0 0 1 0 1.414"
+                      />
+                    </svg></button>
+                </div>
+        
+                <div>
+                    <img src={method1} alt="" className='rounded-e-lg'/>
+                </div>
+        </div>
+        <div className='flex lg:w-1/2 gap-4 px-5 lg:px-0'>
+                <div className='flex flex-col lg:gap-10 gap-5 w-1/2 lg:w-2/3 justify-center'>
+                    <h2 className='text-2xl'>Payments</h2>
+                    <p className=''>Fully programmable, debit credit physical & virtual cards for individuals and businesses.</p>
+                    <button className="text-left text-blue-400 flex gap-2">Get started <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="24"
+                      viewBox="0 0 12 24"
+                      className="text-blue-400"
+                    >
+                      <path
+                        fill="currentColor"
+                        fill-rule="evenodd"
+                        d="M10.157 12.711L4.5 18.368l-1.414-1.414l4.95-4.95l-4.95-4.95L4.5 5.64l5.657 5.657a1 1 0 0 1 0 1.414"
+                      />
+                    </svg></button>
+                </div>
+        
+                <div>
+                    <img src={method3} alt="" className='rounded-e-lg'/>
+                </div>
         </div>
 
-            <img src={method1} className="rounded-e-2xl" alt="" />
+        
         </div>
-      
+        <div className="flex flex-col gap-7 px-10 md:px-0">
+              <div ><img src={method2} alt="" /></div>
+              <div className="lg:mt-20">
+              <div className='flex flex-col lg:gap-10 gap-5  lg:w-1/2 justify-center '>
+                    <h2 className='text-2xl'>Access $175,000 in partner rewards</h2>
+                    <p className=''>Fully programmable, debit credit physical & virtual cards for individuals and businesses.</p>
+                    <button className="text-left text-blue-400 flex gap-2">Get started <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="24"
+                      viewBox="0 0 12 24"
+                      className="text-blue-400"
+                    >
+                      <path
+                        fill="currentColor"
+                        fill-rule="evenodd"
+                        d="M10.157 12.711L4.5 18.368l-1.414-1.414l4.95-4.95l-4.95-4.95L4.5 5.64l5.657 5.657a1 1 0 0 1 0 1.414"
+                      />
+                    </svg></button>
+                </div>
+              </div>
+        </div>
       </section>
     </div>
   );
